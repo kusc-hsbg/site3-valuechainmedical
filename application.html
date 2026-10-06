@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Application - Value Chain Medical</title>
+  <meta name="theme-color" content="#2a2583">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .page-hero {
+      background: var(--primary);
+      padding: 100px 0 60px;
+      text-align: center;
+      padding-top: calc(var(--header-height) + 60px);
+    }
+    .page-hero h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .page-hero p {
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+    }
+    .page-body {
+      max-width: var(--inside-width);
+      margin: 0 auto;
+      padding: 40px 20px 100px;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header scrolled">
+  <div class="header-inner">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/images/d08dd46835a11.jpeg" alt="Value Chain Medical" style="height:40px;width:auto;">
+      </a>
+    </div>
+    <div class="header-right">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="application.html" class="active">Application</a></li>
+        <li><a href="members.html">Members</a></li>
+      </ul>
+      <div class="mobile-menu-btn"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav-overlay"></div>
+<nav class="mobile-nav">
+  <button class="mobile-nav-close">&times;</button>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="application.html" class="active">Application</a></li>
+    <li><a href="members.html">Members</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <h1>Application</h1>
+  <p>Value Chain Medical에 문의하세요.</p>
+</section>
+
+<div class="page-body">
+  <form class="contact-form" onsubmit="return handleFormSubmit(event)">
+    <div class="form-group">
+      <label>Name<span class="required">*</span></label>
+      <input type="text" class="form-control" name="name" required>
+    </div>
+    <div class="form-group">
+      <label>기업명 / 직함<span class="required">*</span></label>
+      <input type="text" class="form-control" name="company" required>
+    </div>
+    <div class="form-group">
+      <label>Phone<span class="required">*</span></label>
+      <div class="phone-wrap">
+        <input type="tel" class="form-control" maxlength="4" name="phone1" required>
+        <span class="sep">-</span>
+        <input type="tel" class="form-control" maxlength="4" name="phone2" required>
+        <span class="sep">-</span>
+        <input type="tel" class="form-control" maxlength="4" name="phone3" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>E-mail<span class="required">*</span></label>
+      <input type="email" class="form-control" name="email" required>
+    </div>
+    <div class="form-group">
+      <label>Inquiry<span class="required">*</span></label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="inquiry[]" value="마케팅 및 브랜딩 컨설팅"><span>마케팅 및 브랜딩 컨설팅</span></label>
+        <label><input type="checkbox" name="inquiry[]" value="디자인 (상품 패키지 디자인, 회사소개서, 카달로그 등)"><span>디자인 (상품 패키지 디자인, 회사소개서, 카달로그 등)</span></label>
+        <label><input type="checkbox" name="inquiry[]" value="화장품 제조 매니지먼트"><span>화장품 제조 매니지먼트</span></label>
+        <label><input type="checkbox" name="inquiry[]" value="미용기기 및 뷰티 세미나 강의 요청"><span>미용기기 및 뷰티 세미나 강의 요청</span></label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Information</label>
+      <input type="file" class="form-control" name="file" style="padding:8px;">
+    </div>
+    <div class="form-group">
+      <label>웹 사이트 또는 SNS 링크 등을 첨부해주세요.</label>
+      <textarea class="form-control" rows="3" name="links"></textarea>
+    </div>
+    <button type="submit" class="btn-submit">Send</button>
+  </form>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-contact">
+      <h6>Contact Us</h6>
+      <p class="contact-line">+61 406822600 &nbsp;l &nbsp;vcmedical.aus@gmail.com &nbsp;l &nbsp;<a href="https://naver.me/FlJcBZZe" target="_blank">Level 3/ 115 Elizabeth st Melbourne 3000</a></p>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <img src="assets/images/0307b35886c6d.png" alt="Value Chain Medical" style="width:auto;height:50px;opacity:0.8;">
+      </div>
+      <div style="height:70px;"></div>
+      <p class="footer-copyright">@Copyright Value Chain Medical 2024. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
