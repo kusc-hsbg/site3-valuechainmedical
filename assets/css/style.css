@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Pretendard:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://vendor-cdn.imweb.me/css/montserrat.css');
+@import url('https://vendor-cdn.imweb.me/fonts/pretendard/web/static/pretendard-dynamic-subset.css');
 
 :root {
   --inside-width: 1024px;
@@ -26,7 +27,7 @@ html {
 }
 
 body {
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Montserrat', 'Pretendard', sans-serif;
   font-size: var(--body-size);
   line-height: var(--body-line-height);
   color: var(--body-color);
