@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular-Vetnamese.eot');
+	src: local('Montserrat Regular'), local('Montserrat-Regular'),
+	url('../fonts/Montserrat-Regular-Vetnamese.eot') format('embedded-opentype'),
+	url('../fonts/Montserrat-Regular-Vetnamese.woff2') format('woff2'),
+	url('../fonts/Montserrat-Regular-Vetnamese.woff') format('woff'),
+	url('../fonts/Montserrat-Regular-Vetnamese.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
